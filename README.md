@@ -18,6 +18,14 @@ http://localhost:1337/swagger (assuming that you are using localhost and default
 #### For [nodemon](https://nodemon.io/) users
 use `nodemon --ignore 'swagger.json'` as we are generating swagger files in that folder we need to ignore that changes.
 
+#### Policies
+
+Don't forget to add the following policies if you have any:
+```json
+  'swagger': true,
+  'swaggerjson': true
+```
+
 ### Change / Customize Default Options
 
 Create swagger.js inside your config folder (config/swagger.js). Copy and paste all setting from default [swagger.js](https://github.com/logisticinfotech/sails-hook-actions2-swagger/blob/master/swagger.js) file.
